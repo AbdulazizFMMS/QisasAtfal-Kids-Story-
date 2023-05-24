@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "751093621649",
+    "project_id": "kutuptest-8f977",
+    "storage_bucket": "kutuptest-8f977.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751093621649:android:abb5cb69eabcfab57fb030",
+        "android_client_info": {
+          "package_name": "com.mofidx.qisasatfal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751093621649-fhfollftpvumh12frhgb92fgoa8pnnnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3b2FD6t8zxLGrXMqfkBh8m4m0PBEjkHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751093621649-fhfollftpvumh12frhgb92fgoa8pnnnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
