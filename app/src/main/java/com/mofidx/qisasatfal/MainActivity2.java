@@ -13,6 +13,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity2 extends AppCompatActivity {
+    int pos_keyARorEN;
     RecyclerView recview;
     myadapter adapter;
     @Override
@@ -23,21 +24,37 @@ public class MainActivity2 extends AppCompatActivity {
 
         recview= findViewById(R.id.recview);
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);
 //        linearLayoutManager.setReverseLayout(true);
 //        linearLayoutManager.setStackFromEnd(true);
-        recview.setLayoutManager(linearLayoutManager);
+        recview.setLayoutManager(gridLayoutManager);
 
 //        recview.setLayoutManager(new LinearLayoutManager(this));
+        pos_keyARorEN = getIntent().getIntExtra("pos_key",0);
+        if (pos_keyARorEN==0){
 
-        FirebaseRecyclerOptions<dataholder> options =
-                new FirebaseRecyclerOptions.Builder<dataholder>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Qisass"), dataholder.class)
-                        .build();
+            FirebaseRecyclerOptions<dataholder> options =
+                    new FirebaseRecyclerOptions.Builder<dataholder>()
+                            .setQuery(FirebaseDatabase.getInstance().getReference().child("QisassAr"), dataholder.class)
+                            .build();
+
+            adapter=new myadapter(options);
+            recview.setAdapter(adapter);
+        }else {
 
 
-        adapter=new myadapter(options);
-        recview.setAdapter(adapter);
+            FirebaseRecyclerOptions<dataholder> options =
+                    new FirebaseRecyclerOptions.Builder<dataholder>()
+                            .setQuery(FirebaseDatabase.getInstance().getReference().child("QisassEn"), dataholder.class)
+                            .build();
+
+            adapter=new myadapter(options);
+            recview.setAdapter(adapter);
+        }
+
+
+
+
 
 
 

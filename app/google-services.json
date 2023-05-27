@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "751093621649",
-    "project_id": "kutuptest-8f977",
-    "storage_bucket": "kutuptest-8f977.appspot.com"
+    "project_number": "473217846626",
+    "project_id": "qisasatfal-da199",
+    "storage_bucket": "qisasatfal-da199.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:751093621649:android:abb5cb69eabcfab57fb030",
+        "mobilesdk_app_id": "1:473217846626:android:21f8bd58fb8c18a757703b",
         "android_client_info": {
           "package_name": "com.mofidx.qisasatfal"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "751093621649-fhfollftpvumh12frhgb92fgoa8pnnnn.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC3b2FD6t8zxLGrXMqfkBh8m4m0PBEjkHo"
+          "current_key": "AIzaSyAtGq4pipQeZQGtRQm0Yam4J52VubDJhSw"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "751093621649-fhfollftpvumh12frhgb92fgoa8pnnnn.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

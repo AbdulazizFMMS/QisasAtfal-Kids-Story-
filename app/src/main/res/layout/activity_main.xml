@@ -6,13 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <Button
-        android:id="@+id/nextbtn"
+        android:id="@+id/nextbtnAr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="next page"
+        android:text="قصص عربي"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/nextbtnEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="قصص انجليزي"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
     <Button
         android:id="@+id/savebtn"
         android:layout_width="wrap_content"
@@ -23,16 +42,18 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
-        android:padding="10dp"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/savebtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.582">
+
 
         <EditText
             android:id="@+id/roll"
@@ -46,73 +67,72 @@
         <EditText
             android:id="@+id/qissaname"
             android:layout_width="match_parent"
-            android:layout_marginBottom="15dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
             android:ems="10"
-            android:inputType="text"
-            android:hint="Name of Qissa" />
+            android:hint="Name of Qissa"
+            android:inputType="text" />
 
         <EditText
-            android:visibility="invisible"
             android:id="@+id/imglink"
             android:layout_width="match_parent"
-            android:layout_marginBottom="15dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
             android:ems="10"
-            android:inputType="text"
             android:hint="Image link"
-             />
+            android:inputType="text"
+            android:visibility="invisible" />
 
         <EditText
-            android:visibility="invisible"
             android:id="@+id/pdflink"
             android:layout_width="match_parent"
-            android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:ems="10"
+            android:hint="Pdf link"
             android:inputType="text"
-            android:hint="Pdf link" />
+            android:visibility="invisible" />
 
         <ImageView
             android:id="@+id/image_view"
-            android:layout_gravity="center"
             android:layout_width="100dp"
             android:layout_height="70dp"
-            android:layout_marginBottom="3dp"/>
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp" />
 
         <Button
             android:id="@+id/btn_upload"
             android:layout_width="match_parent"
-            android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
-            android:text="select image"/>
+            android:layout_marginBottom="10dp"
+            android:text="select image" />
 
         <Button
             android:id="@+id/btn_upload_pdf"
             android:layout_width="match_parent"
-            android:layout_marginBottom="10dp"
             android:layout_height="wrap_content"
-            android:text="upload PDF"/>
+            android:layout_marginBottom="10dp"
+            android:text="upload PDF" />
 
-   <LinearLayout
-       android:orientation="vertical"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_margin="5dp"
-           android:text="اخر رقم قصة تم اضافته هو:" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="اخر رقم قصة تم اضافته هو:" />
 
-       <TextView
-           android:id="@+id/txtsonqissanum"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_margin="5dp" />
+            <TextView
+                android:id="@+id/txtsonqissanum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
 
 
-   </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
